@@ -1,12 +1,13 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/*
-tests/__pycache__/*
-src/frm/__pycache__/*
+tests/__pycache__/
+src/frm/__pycache__/
 *.py[cod]
 *$py.class
 # C extensions
 *.so
-
+.idea
+.idea/*
 # Distribution / packaging
 .Python
 build/

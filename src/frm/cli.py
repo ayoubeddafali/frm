@@ -29,10 +29,11 @@ def create_parser():
     return parser
 
 if __name__ == "__main__":
+    from frm import actions
     parser = create_parser()
     args = vars(parser.parse_args())
     if "project_type" in args:
-        print("Init Workflow")
+        actions.get_workflow(args["project_type"])
     elif args["clean"]:
         print("Clean Workflow")
     elif args["destroy"]:
