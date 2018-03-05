@@ -1,7 +1,7 @@
 FRM
 ========
 
-CLI tool for bootstraping a Continuous delivery workflow.
+CLI tool for bootstraping a Continuous delivery workflow with docker.
 
 **Under development, supports for java based projects.**
 

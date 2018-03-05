@@ -2,10 +2,13 @@
                                                   <u> <b> <h2>Infos </h2></b> </u>
 <hr><hr><hr>
 
-<b><green> frm </green></b> <i> is a CLI-tool for generating a continuous delivery workflow.
+<b><green> frm </green></b> <i> is a CLI-tool for generating a continuous delivery workflow with docker.
 Right now it is designed to support Java based applications.</i>
+We build the project in a docker container, run units & integrations tests, then deploy artifacts to nexus repository.
+We create 4 environments : <b>dev</b>, <b>release</b>, <b>functional_tests</b>  and <b>performance_tests</b>.
+In each, you can customize it to spin up multi-container app to run the tests, or build the artifacts ... etc
 
-<i>Run the help to see all available options. Basically, the tool creates a </i> <blue> docker </blue> <i> folder
+<i>Run the help to see all available options. Basically, the tool creates a </i> <b><blue> docker </blue></b> <i> folder
 in the current directory. This folder contains other folders for defining the dev, release, functional tests,
 and performance tests environments.
 This is fully customizable, and be aware that you should have a certain familiarity with docker & docker-compose
