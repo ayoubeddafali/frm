@@ -38,5 +38,7 @@ Build a wheel
 
 Demo:
 -------
+DEMO_.
 
-[https://asciinema.org/a/k1ZSB5Pz4zhf8yrxsQxa9S9O2](DEMO)
+
+.. _DEMO: https://asciinema.org/a/k1ZSB5Pz4zhf8yrxsQxa9S9O2
