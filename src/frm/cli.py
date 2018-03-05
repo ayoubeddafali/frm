@@ -24,22 +24,25 @@ def create_parser():
 
     group.add_argument("--clean", help="Reset continuous-delivery workflow state to default.", action="store_true")
     group.add_argument("--destroy", help="Remove continuous-delivery workflow.", action="store_true")
-    group.add_argument("--info", help="Get quick info about the continuous delivery workdlow.", action="store_true")
+    group.add_argument("--info", help="Get quick info about the continuous delivery workflow.", action="store_true")
+    group.add_argument("--config", help="Configure current project.", action="store_true")
 
     return parser
 
 if __name__ == "__main__":
-    from frm import actions
+    import actions
     parser = create_parser()
     args = vars(parser.parse_args())
     if "project_type" in args:
         actions.get_workflow(args["project_type"])
     elif args["clean"]:
-        print("Clean Workflow")
+        actions.clean()
     elif args["destroy"]:
-        print("Destroy Workflow")
+        actions.destroy()
     elif args["info"]:
-        print("Info Workflow")
+        actions.get_infos()
+    elif args["config"]:
+        actions.configure()
 
 def main():
     pass
