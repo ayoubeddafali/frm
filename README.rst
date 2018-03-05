@@ -40,5 +40,10 @@ Demo:
 -------
 DEMO_
 
+Workflows:
+---------
+- JAVA_
 
+
+.. _JAVA: https://github.com/ayoubensalem/docker-java
 .. _DEMO: https://asciinema.org/a/k1ZSB5Pz4zhf8yrxsQxa9S9O2
