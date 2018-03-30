@@ -40,9 +40,6 @@ Demo:
 -------
 DEMO_
 
-<p>
-  <img src="https://asciinema.org/a/k1ZSB5Pz4zhf8yrxsQxa9S9O2" width="80%" />
-</p>
 Workflows:
 ---------
 - JAVA_
